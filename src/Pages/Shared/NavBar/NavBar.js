@@ -11,8 +11,10 @@ const NavBar = () => {
 
     const links = [
         { id: 1, name: 'Add Task', path: '/' },
-        { id: 1, name: 'My Task', path: '/my-task' },
-        { id: 1, name: 'Completed Tasks', path: '/complete-tasks' },
+        { id: 2, name: 'My Task', path: '/my-task' },
+        { id: 3, name: 'Completed Tasks', path: '/complete-tasks' },
+        { id: 4, name: 'Login', path: '/login' },
+        { id: 5, name: 'Sign Up', path: '/signup' },
     ]
 
     return (
@@ -32,7 +34,7 @@ const NavBar = () => {
             </div>
             <ul className={`md:flex justify-center absolute md:static duration-500 ease-out ${open ? 'top-16 bg-slate-400 p-6' : 'top-[-120px]'}`}>
                 {
-                    links.map(link => <NavLink end key={link.id} className={({ isActive }) => isActive ? 'mr-8 text-xl font-semibold border-t-4 md:p-4 border-sky-500 text-sky-700' : 'mr-8 text-xl font-semibold'} to={link.path}>{link.name}</NavLink>)
+                    links.map(link => <NavLink end key={link.id} className={({ isActive }) => isActive ? 'mr-8 text-xm font-semibold border-t-4 md:p-4 border-sky-500 text-sky-700' : 'mr-8 text-xl font-semibold'} to={link.path}>{link.name}</NavLink>)
                 }
             </ul>
         </div>

@@ -65,7 +65,7 @@ const CompleteTask = () => {
 
     return (
         <div className='py-20'>
-            <h2 className='text-center text-3xl font-bold text-green-600'>My Tasks</h2>
+            <h2 className='text-center text-3xl font-bold text-green-600'>Completed Tasks</h2>
             <div className='mt-10 w-10/12 mx-auto'>
                 {
                     tasks.map(task =>
